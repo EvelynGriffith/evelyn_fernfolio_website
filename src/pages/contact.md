@@ -28,7 +28,7 @@ Honors Convocation Music Scholarship                                            
 Trying to committ
 
 
-James Edward Meadowcroft Memorial Award                                                         `Spring 2023`
+James Edward Meadowcroft Memorial Award                                                    `Spring 2023`
 (Recognized for Excellence in Academics, Spirituality, and Music)
 
 Belle McClintock Fry Award 
