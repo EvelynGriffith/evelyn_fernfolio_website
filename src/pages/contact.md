@@ -1,11 +1,11 @@
 ---
-title: Resume
+title: Curriculum Vitae
 date: 2021-01-01
-permalink: /Resume/index.html
-metaDescription: My resume will be listed here
-subtitle: Here is a formal copy of my resume! Please feel free to take a look!
+permalink: /Curriculum Vitae/index.html
+metaDescription: My CV will be listed here
+subtitle: Here is a formal copy of my Curriculum Vitae! Please feel free to take a look!
 eleventyNavigation:
-  key: Resume
+  key: Curriculum Vitae
   order: 3
 ---
 
