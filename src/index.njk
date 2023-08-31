@@ -1,0 +1,58 @@
+---
+layout: base.njk
+section: home
+---
+<div class="home-page">
+	<div class="home-page__bg-square"></div>
+
+  {# Hero #}
+  <div class="hero">
+    <div class="hero__col">
+      <h1 class="hero__title gradient-text">{{ home.title }}</h1>
+      {% if home.body %}
+        <div class="hero__body">{{ home.body | markdown | safe }}</div>
+      {% endif %}
+    </div>
+    <div class="hero__col">
+      {% image
+        home.image,
+        home.image_alt,
+        "(min-width: 1024px) 50vw, 100vw",
+        "hero__image shadow",
+        "eager"
+      %}
+    </div>
+  </div>
+
+  {# Featured Project! #}
+  <hr/>
+  <h2>Featured Project!</h2>
+  {% from "macros/projectlist.njk" import projectlist %}
+  {{ projectlist(projects = collections.project | reverse) }}
+
+  {# Contact Information #}
+  <hr/>
+  <h4>Contact Information</h4>
+  <html>
+    <h5>Email: evelyn@griffith.llc</h5>
+    <head>
+    <style>
+        a:link {
+          color: black;
+          background-color: transparent;
+          text-decoration: none;
+        }
+        a:visited {
+          color: black;
+          background-color: transparent;
+          text-decoration: none;
+        }
+        a:active {
+          color: black;
+          background-color: transparent;
+        }
+    </style>
+    </head>
+    <h5><a href="https://www.linkedin.com/in/evelyn-griffith-463177253/" target="_blank">Evelyn's Linkedin Page</a><br><br><a href="https://github.com/EvelynGriffith" target="_blank">Evelyn's Github Page</a><h5>
+  </html>  
+</div>
